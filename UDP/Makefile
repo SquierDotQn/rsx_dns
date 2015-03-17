@@ -6,6 +6,9 @@ CFLAGS += -g
 ReceiveUDP: ReceiveUDP.java
 	javac $<
 
+SendDNS: SendDNS.java
+	javac $<
+
 SendUDP: SendUDP.c
 	$(CC) $(CFLAGS) -o $@ $<
 
